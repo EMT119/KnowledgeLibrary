@@ -12,9 +12,29 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="menu.css" />
+    <script defer src="./menuControl.js"></script>
   </head>
-  <body></body>
-  <script>
-    location.href = "Meds.html";
-  </script>
+  <body>
+    <div class="navbar">
+      <span class="nav-item">AEMT</span>
+      <span class="nav-item">Body Systems</span>
+      <span class="nav-item">Medical Conditions</span>
+      <span class="nav-item">Procedures</span>
+    </div>
+    <div class="container" id="AEMT">
+      <div class="grid grid-1-2">
+        <div class="vertical-menu">
+          <p class="header">Study Guides</p>
+          <span onclick="changeFrame('./Meds.html')">Meds</span>
+          <span onclick='changeFrame("https://medmathpractice.web.app")'
+            >Med Math Practice</span
+          >
+          <hr />
+          <p class="header">Book Chapters</p>
+          <span>Chapter 1</span>
+        </div>
+        <iframe id="AEMTframe" src="" frameborder="0"></iframe>
+      </div>
+    </div>
+  </body>
 </html>

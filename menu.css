@@ -5,11 +5,25 @@
 
 body {
   background-color: #2f3437;
-  margin: 1.5rem;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
   text-decoration: none;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.container {
+  margin: 1rem;
+  flex-grow: 1;
 }
 
 .card {
@@ -17,4 +31,49 @@ a {
   font-size: 1.5rem;
   border-radius: 10px;
   background-color: green;
+}
+
+.navbar {
+  display: flex;
+  background-color: #38454d;
+}
+
+.nav-item {
+  padding: 1rem;
+}
+
+.nav-item:hover {
+  background-color: #44535d;
+  cursor: pointer;
+}
+
+.vertical-menu span {
+  padding: 0.5rem;
+  border-radius: 5px;
+  display: block;
+}
+
+.vertical-menu span:hover {
+  background-color: #44535d;
+  cursor: pointer;
+}
+
+.header {
+  text-align: right;
+  font-weight: 800;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #5f9ccb;
+  border-bottom: 1px solid #5f9ccb;
+}
+
+/*Grid styling*/
+.grid {
+  display: grid;
+  height: 100%;
+}
+
+.grid-1-2 {
+  column-gap: 1.5rem;
+  grid-template-columns: 0.75fr 2fr;
 }
