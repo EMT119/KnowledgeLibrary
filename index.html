@@ -18,11 +18,12 @@
     <div class="navbar">
       <span class="nav-item">AEMT</span>
       <span class="nav-item">Body Systems</span>
+      <span class="nav-item">Medications</span>
       <span class="nav-item">Medical Conditions</span>
       <span class="nav-item">Procedures</span>
     </div>
     <div class="container" id="AEMT">
-      <div class="grid grid-1-2">
+      <div class="grid grid-1-2 divider">
         <div class="vertical-menu">
           <p class="header">Study Guides</p>
           <span onclick="changeFrame('./Meds.html')">Meds</span>
@@ -31,7 +32,18 @@
           >
           <hr />
           <p class="header">Book Chapters</p>
-          <span>Chapter 1</span>
+          <span
+            onclick="changeFrame('./Chapters/Chapter 16 - Medical Overview.html')"
+            >Chapter 16 - Medical Overview</span
+          >
+          <span
+            onclick="changeFrame('./Chapters/Chapter 17 - Respiratory Emergencies.html')"
+            >Chapter 17 - Respiratory Emergencies</span
+          >
+          <span
+            onclick="changeFrame('./Chapters/Chapter 35 - Obstetrics and Neonatal Care.html')"
+            >Chapter 35 - Obstetrics and Neonatal Care</span
+          >
         </div>
         <iframe id="AEMTframe" src="" frameborder="0"></iframe>
       </div>
